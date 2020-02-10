@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script defer src="js/main.js"></script>
+    <title>Интернет магазин пиццы</title>
+</head>
+<body>
+<div class="overlay visible">
+    <div class="pop-up">
+        <div class="pop-up__buttons">
+            <a href="#" class="pop-up__button pop-up__button--grid"> <span class='pop-up__icon icon-grid'></span> <span>Cетка</span>
+            </a>
+            <a href="#" class="pop-up__button pop-up__button--list"><span class='pop-up__icon icon-list'></span> <span>Список</span>
+            </a>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="container">
+        <div class="navigation">
+            <div>
+                <span>Выбор по названию</span>
+                <label>
+                    <select class='names-select'>
+                        <option value="namesToLow">По алфавиту</option>
+                        <option value="namesToHigh">В обратном порядке</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <span>Выбор по цене</span>
+                <label>
+                    <select class='price-select'>
+                        <option value="priceToHigh">По возрастанию</option>
+                        <option value="priceToLow">По убыванию</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="products-wrapper">
+            <div class="products-filter">
+                <h4 class="products-filter__ingredients">
+                    Cостав пицц:
+                </h4>
+                <ul class="products-filter__ingredients-list">
+                    <li class='products-filter__ingredients-item'><label for='olives'></label><input type="checkbox"
+                                                                                                     name="olives"
+                                                                                                     id='olives'
+                                                                                                     class='products-filter__checkbox'><label>оливки</label>
+                    </li>
+                    <br>
+                    <li class='products-filter__ingredients-item'><label for='mozzarella'></label><input type="checkbox"
+                                                                                                         name="mozzarella"
+                                                                                                         id='mozzarella'
+                                                                                                         class='products-filter__checkbox'><label>сыр
+                        моцарелла</label></li>
+                    <br>
+                    <li class='products-filter__ingredients-item'><label for='parsley'></label><input type="checkbox"
+                                                                                                      name="parsley"
+                                                                                                      id='parsley'
+                                                                                                      class='products-filter__checkbox'><label>петрушка</label>
+                    </li>
+                    <br>
+                    <li class='products-filter__ingredients-item'><label for='champignon'></label><input type="checkbox"
+                                                                                                         name="champignon"
+                                                                                                         id='champignon'
+                                                                                                         class='products-filter__checkbox'><label>шампиньоны</label>
+                    </li>
+                    <br>
+                    <li class='products-filter__ingredients-item'><label for='pork'></label><input type="checkbox"
+                                                                                                   name="pork" id='pork'
+                                                                                                   class='products-filter__checkbox'><label>свинина</label>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+            <div class="products-list">
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
